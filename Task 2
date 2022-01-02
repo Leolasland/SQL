@@ -1,0 +1,12 @@
+Categories - один-ко-многим с Produts
+Contacts - нет связей ни с одной таблицей
+Customers - один-ко-многим с Orders
+Employees – один-ко-многим с Orders и EmployeeTerritories
+Products – многие-ко-многим с OrderDetails, Categories, Suppliers
+Suppliers – один-ко-многим с Produts
+Shippers – один-ко-многим с Orders
+Region – один-ко-многим с Territories
+Territories – один-ко-многим с EmployeeTerritories
+Orders – многие-ко-многим с OrderDetails, Shippers, Customers, Employees
+Order Details – многие-ко-многим с Produts, Orders 
+EmployeeTerritories - один-ко-многим с Employee, Territories
