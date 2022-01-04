@@ -1,0 +1,15 @@
+8.3.1.
+SELECT Products.ProductName, Categories.CategoryName
+FROM Products, Categories
+WHERE Products.CategoryID = Categories.CategoryID
+8.3.2.
+SELECT [Order Details].UnitPrice, Products.ProductName
+FROM [Order Details], Products
+WHERE Products.ProductID = [Order Details].ProductID
+  AND ([Order Details].UnitPrice < 20);
+8.3.3.
+SELECT [Order Details].UnitPrice, Products.ProductName, Categories.CategoryName
+FROM [Order Details], Products, Categories
+WHERE Products.ProductID = [Order Details].ProductID
+  AND ([Order Details].UnitPrice < 20)
+	AND Products.CategoryID = Categories.CategoryID;
