@@ -1,0 +1,2 @@
+USE MyTest;
+CREATE INDEX idTerritoriesRegions ON Territories(TerritoryID, RegionID);
