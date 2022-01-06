@@ -1,0 +1,13 @@
+10.4.1.
+SELECT Products.ProductName, [Order Details].UnitPrice
+FROM Products JOIN [Order Details]
+ON Products.ProductID = [Order Details].ProductID AND 
+      [Order Details].UnitPrice < 20
+10.4.2.
+FULL JOIN возвращает все записи входящие в обе таблицы. NULL появился в тех полях, которые не подошли под условие отбора, т.е например в таблице Customers есть CustomerID FISSA, а в таблице Orders этого CustomerID нет. А так как происходит объединение таблиц, то в получившемся выводе поля которые отсутсвуют отмечены как NULL - значения в поле нет.
+10.4.3.
+Запрос CROSS JOIN в можно превратить в INNER JOIN, если проверять с помощью WHERE равенство значений поля одной таблицы значению поля другой таблицы.
+10.4.4.
+SELECT Products.ProductName, [Order Details].UnitPrice
+FROM Products JOIN [Order Details]
+ON Products.ProductID = [Order Details].ProductID
