@@ -1,0 +1,13 @@
+13.3.1.
+UPDATE [Order Details]
+SET Discount = 0.20
+WHERE Quantity > 50;
+13.3.2.
+SET City = 'Piter' AND Country = 'Russia'
+WHERE City = 'Berlin' AND Country = 'Germany'; 
+13.3.3.
+INSERT INTO Shippers(CompanyName)
+VALUES ('qwe');
+
+DELETE FROM Shippers
+WHERE Phone is NULL;
