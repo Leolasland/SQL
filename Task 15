@@ -1,0 +1,9 @@
+15.7.
+CREATE TABLE Territories ( 
+    TerritoryID nvarchar(20) NOT NULL, 
+    TerritoryDescription nchar(50) NOT NULL,
+    RegionID int NOT NULL DEFAULT);
+INSERT INTO Region(RegionID, RegionDescription, Help)
+VALUES (1, 'Eastern', 'Sunrise');
+INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
+VALUES ('01234', 'New York', 1);
